@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #clickButton {
+            background-color: rgb(145, 181, 228);
+            color: black;
+            height: 50px;
+            width: 100px;
+            font-size: large;
+            border: none;
+            border-radius: 10px;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event in Javascript</h1>
+    <h2>What is an event?</h2>
+    <h3>Event is an action that occurs as per the users instruction input and gives output in the response.<br>
+        For eg: users clicking on mouse, webpage loading <br>
+        There are two ways to handle events in javascript----<br>
+        1. event handler <br>
+        2. event listener</h3>
+
+    <h1> Example of Event listeners</h1>
+    <button id="clickButton">Click me</button>
+
+    <script>
+        // best way to handle click event 
+        // benefits of using the event listener is that we can use many click events as many we want 
+        const button = document.getElementById("clickButton");
+        button.addEventListener("click", function (e) {
+            console.log("I am clicked", e);
+            console.log("Hey! I am clicked 2");
+        });
+    </script>
+
+</body>
+
+</html>
